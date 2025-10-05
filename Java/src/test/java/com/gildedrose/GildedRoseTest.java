@@ -89,10 +89,10 @@ class GildedRoseTest {
 
     @Test
     void Sulfuras_is_legendary() {
-        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 3, 50) };
+        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 3, 80) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(50, app.items[0].quality);
+        assertEquals(80, app.items[0].quality);
         assertEquals(3, app.items[0].sellIn);
     }
 
